@@ -28,8 +28,7 @@ module.exports = {
   mode: 'development',
   devServer: {
     open: false,
-    contentBase: './dist',
-    inline: true,
+    static: path.resolve(__dirname, './dist'),
     port: 4000,
   },
 };
