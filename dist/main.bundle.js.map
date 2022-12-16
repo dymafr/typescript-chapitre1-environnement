@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://end/./src/index.ts"],"names":[],"mappings":";;;;;;AAAA;AACA","file":"main.bundle.js","sourcesContent":["const test = '123';\nconsole.log(test);\n"],"sourceRoot":""}
