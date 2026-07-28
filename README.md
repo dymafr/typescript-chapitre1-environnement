@@ -8,6 +8,9 @@ cours TypeScript de Dyma.
 - Node.js 20.19+, 22.12+ ou 24 LTS
 - npm
 
+La contrainte correspondante est déclarée dans `package.json` afin qu'une
+version de Node.js incompatible soit signalée dès l'installation.
+
 ## Installation
 
 ```bash
