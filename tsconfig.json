@@ -1,121 +1,23 @@
 {
   "compilerOptions": {
-
-    /* ── Projets ── */
-
-    // "incremental": false,                                /* Sauvegarder les fichiers .tsbuildinfo pour la compilation incrémentale */
-    // "composite": false,                                  /* Activer les contraintes pour utiliser le projet avec les références de projets */
-    // "tsBuildInfoFile": "./.tsbuildinfo",                 /* Chemin du fichier de compilation incrémentale */
-    // "disableSourceOfProjectReferenceRedirect": false,    /* Désactiver la préférence des fichiers sources au lieu des fichiers de déclaration pour les projets composites */
-    // "disableSolutionSearching": false,                   /* Exclure ce projet de la vérification multi-projets lors de l'édition */
-    // "disableReferencedProjectLoad": false,               /* Réduire le nombre de projets chargés automatiquement */
-
-    /* ── Langage et environnement ── */
-
-    "target": "ES2022",                                     /* Version JavaScript cible pour le code émis */
-    // "lib": [],                                           /* Fichiers de déclaration de bibliothèque décrivant l'environnement d'exécution cible */
-    // "jsx": "preserve",                                   /* Type de code JSX généré : preserve, react, react-jsx, react-jsxdev, react-native */
-    // "experimentalDecorators": false,                     /* Activer le support des anciens décorateurs expérimentaux */
-    // "emitDecoratorMetadata": false,                      /* Émettre les métadonnées de type pour les déclarations décorées */
-    // "jsxFactory": "React.createElement",                 /* Fonction factory JSX pour l'émission React JSX (ex: 'h') */
-    // "jsxFragmentFactory": "React.Fragment",              /* Référence Fragment JSX pour les fragments React (ex: 'Fragment') */
-    // "jsxImportSource": "react",                          /* Spécificateur de module pour importer les fonctions factory JSX avec 'jsx: react-jsx' */
-    // "reactNamespace": "React",                           /* Objet invoqué pour 'createElement' (uniquement pour l'émission 'react') */
-    // "noLib": false,                                      /* Désactiver l'inclusion de tout fichier de bibliothèque, y compris lib.d.ts par défaut */
-    // "useDefineForClassFields": true,                     /* Émettre des champs de classe conformes au standard ECMAScript */
-    // "moduleDetection": "auto",                           /* Méthode de détection du format module des fichiers JS : legacy, auto, force */
-    // "libReplacement": false,                             /* Activer le remplacement des bibliothèques */
-
-    /* ── Modules ── */
-
-    "module": "ESNext",                                     /* Type de code module généré : commonjs, es2015, es2020, es2022, esnext, node16, nodenext, preserve */
-    "moduleResolution": "bundler",                          /* Stratégie de résolution des modules : node16, nodenext, bundler */
-    // "baseUrl": "./",                                     /* Répertoire de base pour résoudre les noms de modules non relatifs */
-    // "paths": {},                                         /* Entrées de remappage d'imports vers d'autres emplacements */
-    // "rootDir": "./",                                     /* Dossier racine des fichiers sources */
-    // "rootDirs": [],                                      /* Plusieurs dossiers traités comme un seul lors de la résolution des modules */
-    // "typeRoots": [],                                     /* Dossiers supplémentaires agissant comme './node_modules/@types' */
-    // "types": [],                                         /* Noms de paquets de types à inclure sans être référencés dans le code */
-    // "allowUmdGlobalAccess": false,                       /* Autoriser l'accès aux globaux UMD depuis les modules */
-    // "moduleSuffixes": [],                                /* Suffixes de noms de fichiers à chercher lors de la résolution d'un module */
-    "allowImportingTsExtensions": true,                     /* Autoriser les imports avec extensions TypeScript (.ts, .tsx). Requiert moduleResolution 'bundler' et noEmit */
-    // "resolvePackageJsonExports": true,                   /* Utiliser le champ 'exports' de package.json pour la résolution des imports */
-    // "resolvePackageJsonImports": true,                   /* Utiliser le champ 'imports' de package.json pour la résolution des imports */
-    // "customConditions": [],                              /* Conditions supplémentaires pour la résolution des imports */
-    "resolveJsonModule": true,                              /* Activer l'import de fichiers .json */
-    // "allowArbitraryExtensions": false,                   /* Autoriser l'import de fichiers avec n'importe quelle extension (si un .d.ts est présent) */
-    // "noResolve": false,                                  /* Interdire aux import/require/<reference> d'ajouter des fichiers au projet */
-    // "noUncheckedSideEffectImports": true,                /* Vérifier les imports à effets de bord */
-    // "rewriteRelativeImportExtensions": false,            /* Réécrire les extensions .ts/.tsx/.mts/.cts en équivalent JS dans les imports relatifs */
-
-    /* ── Support JavaScript ── */
-
-    // "allowJs": false,                                    /* Autoriser les fichiers JavaScript dans le programme */
-    // "checkJs": false,                                    /* Activer le rapport d'erreurs dans les fichiers JavaScript vérifiés par les types */
-    // "maxNodeModuleJsDepth": 0,                           /* Profondeur max de dossier pour vérifier les fichiers JS de node_modules (avec allowJs) */
-
-    /* ── Émission ── */
-
-    // "declaration": false,                                /* Générer des fichiers .d.ts depuis les fichiers TypeScript et JavaScript */
-    // "declarationMap": false,                             /* Créer des sourcemaps pour les fichiers .d.ts */
-    // "emitDeclarationOnly": false,                        /* N'émettre que les fichiers .d.ts, pas les fichiers JavaScript */
-    // "sourceMap": false,                                  /* Créer des fichiers source map pour le JavaScript émis */
-    // "inlineSourceMap": false,                            /* Inclure les sourcemaps dans le JavaScript émis */
-    // "outFile": "./",                                     /* Fichier regroupant toutes les sorties en un seul fichier JS */
-    // "outDir": "./",                                      /* Dossier de sortie pour tous les fichiers émis */
-    // "removeComments": false,                             /* Supprimer les commentaires dans le code émis */
-    "noEmit": true,                                         /* Désactiver l'émission de fichiers (Vite gère le bundling) */
-    // "importHelpers": false,                              /* Importer les fonctions helper depuis tslib une seule fois par projet */
-    // "downlevelIteration": false,                         /* Émettre du JS plus conforme mais plus verbeux pour l'itération */
-    // "sourceRoot": "",                                    /* Chemin racine pour les débogueurs vers le code source de référence */
-    // "mapRoot": "",                                       /* Emplacement où le débogueur doit localiser les fichiers map */
-    // "inlineSources": false,                              /* Inclure le code source dans les sourcemaps du JavaScript émis */
-    // "emitBOM": false,                                    /* Émettre un BOM (Byte Order Mark) UTF-8 au début des fichiers de sortie */
-    // "newLine": "lf",                                     /* Caractère de fin de ligne pour l'émission : crlf ou lf */
-    // "stripInternal": false,                              /* Désactiver l'émission des déclarations marquées '@internal' dans les JSDoc */
-    // "noEmitHelpers": false,                              /* Désactiver la génération de fonctions helper personnalisées comme '__extends' */
-    // "noEmitOnError": false,                              /* Désactiver l'émission si des erreurs de typage sont signalées */
-    // "preserveConstEnums": false,                         /* Conserver les déclarations 'const enum' dans le code généré */
-    // "declarationDir": "./",                              /* Dossier de sortie pour les fichiers de déclaration générés */
-
-    /* ── Contraintes d'interopérabilité ── */
-
-    "isolatedModules": true,                                /* S'assurer que chaque fichier peut être transpilé sans dépendre d'autres imports */
-    // "verbatimModuleSyntax": false,                       /* Ne pas transformer/élider les imports/exports non marqués comme type-only */
-    // "allowSyntheticDefaultImports": true,                /* Autoriser 'import x from y' quand un module n'a pas d'export par défaut */
-    "esModuleInterop": true,                                /* Émettre du JS supplémentaire pour faciliter l'import des modules CommonJS */
-    // "preserveSymlinks": false,                           /* Désactiver la résolution des liens symboliques vers leur chemin réel */
-    "forceConsistentCasingInFileNames": true,               /* S'assurer que la casse est correcte dans les imports */
-    // "isolatedDeclarations": false,                       /* Exiger des annotations suffisantes sur les exports pour que d'autres outils puissent générer les .d.ts */
-    // "erasableSyntaxOnly": false,                         /* N'autoriser que les constructions TypeScript qui peuvent être effacées (pas d'enums, namespaces, etc.) */
-
-    /* ── Vérification des types ── */
-
-    "strict": true,                                         /* Activer toutes les options de vérification stricte des types */
-    // "noImplicitAny": true,                               /* Signaler les expressions et déclarations avec un type 'any' implicite */
-    // "strictNullChecks": true,                            /* Prendre en compte 'null' et 'undefined' lors de la vérification des types */
-    // "strictFunctionTypes": true,                         /* Vérifier la compatibilité des paramètres et valeurs de retour lors de l'assignation de fonctions */
-    // "strictBindCallApply": true,                         /* Vérifier que les arguments de 'bind', 'call' et 'apply' correspondent à la fonction originale */
-    // "strictPropertyInitialization": true,                /* Vérifier que les propriétés de classe déclarées sont initialisées dans le constructeur */
-    // "strictBuiltinIteratorReturn": true,                 /* Les itérateurs natifs ont un type de retour 'undefined' au lieu de 'any' */
-    // "noImplicitThis": true,                              /* Signaler quand 'this' a le type 'any' */
-    // "useUnknownInCatchVariables": true,                  /* Variables de clause catch typées 'unknown' au lieu de 'any' */
-    // "alwaysStrict": true,                                /* Toujours émettre 'use strict' */
-    // "noUnusedLocals": false,                             /* Signaler les variables locales non utilisées */
-    // "noUnusedParameters": false,                         /* Signaler les paramètres de fonction non utilisés */
-    // "exactOptionalPropertyTypes": false,                 /* Interpréter les types de propriétés optionnelles tels quels, sans ajouter 'undefined' */
-    // "noImplicitReturns": false,                          /* Signaler les chemins de code qui ne retournent pas explicitement dans une fonction */
-    // "noFallthroughCasesInSwitch": false,                 /* Signaler les cas de fallthrough dans les instructions switch */
-    // "noUncheckedIndexedAccess": false,                   /* Ajouter 'undefined' au type lors d'un accès par index */
-    // "noImplicitOverride": false,                         /* Exiger le modificateur 'override' pour les membres redéfinis dans les classes dérivées */
-    // "noPropertyAccessFromIndexSignature": false,         /* Forcer l'utilisation d'accesseurs indexés pour les clés déclarées via une signature d'index */
-    // "allowUnusedLabels": undefined,                      /* Désactiver le signalement des labels inutilisés */
-    // "allowUnreachableCode": undefined,                   /* Désactiver le signalement du code inatteignable */
-
-    /* ── Complétude ── */
-
-    // "skipDefaultLibCheck": false,                        /* Ignorer la vérification des types des .d.ts inclus avec TypeScript */
-    "skipLibCheck": true                                    /* Ignorer la vérification des types de tous les fichiers .d.ts */
+    "target": "ES2024",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2024", "DOM", "DOM.Iterable"],
+    "types": ["vite/client"],
+    "allowArbitraryExtensions": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "erasableSyntaxOnly": true,
+    "noEmit": true,
+    "strict": true,
+    "noUncheckedSideEffectImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true
   },
   "include": ["src"]
 }
